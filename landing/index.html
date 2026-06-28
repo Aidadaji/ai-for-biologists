@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI for Biologists — Practical Course for Indian Researchers | AIdadaji Labs</title>
+    <meta name="description" content="Learn to use AI tools (Claude, ChatGPT, Perplexity) responsibly in biology research. Hands-on labs, Indian bio context (DBT/CSIR/ICMR), 6-week course with certificate. ₹3,999.">
+    <meta name="keywords" content="AI biology, AI for biologists, Claude biology, ChatGPT research, India biology course, DBT, CSIR">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8f0f7 100%);
+        }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+        /* Hero */
+        .hero {
+            padding: 80px 20px 60px;
+            text-align: center;
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+        .hero .subtitle {
+            font-size: 1.4rem;
+            opacity: 0.95;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin: 0 5px;
+        }
+        .cta-primary {
+            display: inline-block;
+            background: #10b981;
+            color: white;
+            padding: 16px 36px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .cta-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(16, 185, 129, 0.4);
+        }
+        .cta-secondary {
+            display: inline-block;
+            background: transparent;
+            color: white;
+            padding: 14px 32px;
+            font-size: 1rem;
+            border: 2px solid white;
+            border-radius: 8px;
+            text-decoration: none;
+            margin: 20px 10px 0;
+        }
+
+        /* Sections */
+        section { padding: 60px 20px; }
+        h2 {
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+            color: #1e3a8a;
+            text-align: center;
+        }
+        h3 { font-size: 1.4rem; margin-bottom: 12px; color: #1e40af; }
+
+        /* Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            transition: transform 0.2s;
+        }
+        .card:hover { transform: translateY(-3px); }
+        .card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 12px;
+        }
+
+        /* Modules timeline */
+        .module {
+            background: white;
+            padding: 25px;
+            border-left: 4px solid #3b82f6;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .module .week {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+        }
+
+        /* India section */
+        .india-section {
+            background: #fff7ed;
+            padding: 60px 20px;
+        }
+        .india-badge {
+            display: inline-block;
+            background: #ff9933;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        /* Pricing */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .pricing-card {
+            background: white;
+            padding: 35px 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            text-align: center;
+            position: relative;
+        }
+        .pricing-card.featured {
+            border: 3px solid #10b981;
+            transform: scale(1.05);
+        }
+        .pricing-card.featured::before {
+            content: "MOST POPULAR";
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #10b981;
+            color: white;
+            padding: 4px 16px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        .price {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1e3a8a;
+            margin: 15px 0;
+        }
+        .price .currency { font-size: 1.2rem; vertical-align: super; }
+        .pricing-card ul {
+            list-style: none;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .pricing-card ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .pricing-card ul li::before {
+            content: "✅ ";
+            margin-right: 8px;
+        }
+
+        /* FAQ */
+        .faq-item {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+        .faq-item h4 {
+            color: #1e3a8a;
+            margin-bottom: 8px;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        footer a { color: #60a5fa; text-decoration: none; }
+
+        /* Testimonial */
+        .testimonial {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            margin: 15px 0;
+            font-style: italic;
+        }
+        .testimonial .author {
+            margin-top: 12px;
+            font-size: 0.9rem;
+            color: #666;
+            font-style: normal;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .hero .subtitle { font-size: 1.1rem; }
+            .pricing-card.featured { transform: none; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+        <div style="margin-bottom: 20px;">
+            <span class="badge">🧬 6-week course</span>
+            <span class="badge">🇮🇳 India-specific</span>
+            <span class="badge">📜 Certificate</span>
+            <span class="badge">🧪 20 hands-on labs</span>
+        </div>
+        <h1>AI for Biologists</h1>
+        <p class="subtitle">
+            The practical course Indian biology researchers need to use Claude, ChatGPT, and Perplexity
+            <strong>without compromising scientific rigor</strong>.
+        </p>
+        <a href="#pricing" class="cta-primary">Enroll Now — ₹3,999</a>
+        <a href="#syllabus" class="cta-secondary">View Syllabus</a>
+        <p style="margin-top: 20px; font-size: 0.95rem; opacity: 0.85;">
+            Built by researchers, for researchers. Open source. MIT licensed.
+        </p>
+    </div>
+</section>
+
+<!-- PROBLEM -->
+<section>
+    <div class="container">
+        <h2>The problem with AI in biology</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="icon">🚨</div>
+                <h3>AI hallucinates citations</h3>
+                <p>5-20% of AI-generated biology citations don't exist or are wrong. Submit a paper with fabricated DOIs and you're flagged.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🧬</div>
+                <h3>Wrong gene names</h3>
+                <p>LLMs confidently invent gene symbols. Without verification, your primer design could be targeting a non-existent gene.</p>
+            </div>
+            <div class="card">
+                <div class="icon">📊</div>
+                <h3>Misinterpreted statistics</h3>
+                <p>AI suggests the wrong statistical test, fabricates p-values, or "explains" results that don't match the paper's actual data.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🇮🇳</div>
+                <h3>Western-centric training</h3>
+                <p>Most AI tools miss Indian journals, theses (Shodhganga), and regulatory frameworks (DBT, ICMR, UGC).</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WHAT YOU'LL LEARN -->
+<section style="background: white;">
+    <div class="container">
+        <h2>What you'll learn</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="icon">🔍</div>
+                <h3>Find papers 3× faster</h3>
+                <p>Smart search across PubMed, Semantic Scholar, Elicit, Perplexity. Find 10 relevant papers in 15 minutes.</p>
+            </div>
+            <div class="card">
+                <div class="icon">⚠️</div>
+                <h3>Catch hallucinations</h3>
+                <p>Train your verification reflexes. Identify fabricated DOIs, wrong genes, and invented statistics in seconds.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🧪</div>
+                <h3>Design better experiments</h3>
+                <p>Use AI to generate hypotheses, find missing controls, calculate sample size, and verify protocols.</p>
+            </div>
+            <div class="card">
+                <div class="icon">📝</div>
+                <h3>Write papers faster</h3>
+                <p>Methods automation, results prose, citation verification, reviewer response — all done responsibly.</p>
+            </div>
+            <div class="card">
+                <div class="icon">📊</div>
+                <h3>Analyze data with confidence</h3>
+                <p>Spreadsheet intelligence, statistics guidance, bioinformatics help — with verification at every step.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🎓</div>
+                <h3>Earn a certificate</h3>
+                <p>Digital badge + PDF upon capstone completion. Shareable on LinkedIn, recognizable by Indian institutions.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SYLLABUS -->
+<section id="syllabus">
+    <div class="container">
+        <h2>Course curriculum</h2>
+        <p style="text-align: center; color: #666; margin-bottom: 30px;">
+            6 weeks · 8-10 hrs/week · 30+ video lessons · 20 hands-on labs
+        </p>
+
+        <div class="module">
+            <span class="week">WEEK 1</span>
+            <h3>Module 1: AI for Literature Review</h3>
+            <p>Smart paper discovery · Summarization · Catching hallucinations · Literature matrix</p>
+        </div>
+
+        <div class="module">
+            <span class="week">WEEK 2</span>
+            <h3>Module 2: AI for Experimental Design</h3>
+            <p>Hypothesis generation · Controls · Sample size · Protocol lookup with IAEC/CPCSEA</p>
+        </div>
+
+        <div class="module">
+            <span class="week">WEEK 3</span>
+            <h3>Module 3: AI for Data Analysis</h3>
+            <p>Spreadsheets · Statistics · Bioinformatics · AI interpretation vs human judgment</p>
+        </div>
+
+        <div class="module">
+            <span class="week">WEEK 4</span>
+            <h3>Module 4: AI for Scientific Writing</h3>
+            <p>IMRaD structure · Methods automation · Citation verification · Reviewer responses</p>
+        </div>
+
+        <div class="module">
+            <span class="week">WEEK 5</span>
+            <h3>Module 5: Presentations & Communication</h3>
+            <p>Slides · Conference abstracts · SERB/DST grants · Posters</p>
+        </div>
+
+        <div class="module">
+            <span class="week">WEEK 6</span>
+            <h3>Module 6: AI Ethics & Responsible Use</h3>
+            <p>UGC/CSIR policy · ICMR ethics · Data privacy (DPDP Act) · When AI is wrong</p>
+        </div>
+
+        <div class="module" style="border-left-color: #10b981;">
+            <span class="week" style="background: #10b981;">CAPSTONE</span>
+            <h3>Final Project: Choose Your Path</h3>
+            <p>Literature review · Research proposal · Manuscript draft — all with verification logs</p>
+        </div>
+    </div>
+</section>
+
+<!-- INDIA SPECIFIC -->
+<section class="india-section">
+    <div class="container">
+        <div style="text-align: center;">
+            <span class="india-badge">🇮🇳 BUILT FOR INDIA</span>
+        </div>
+        <h2>What's different from generic "AI for X" courses</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>📚 INFLIBNET + Shodhganga</h3>
+                <p>Free access to journals for Indian universities. Search 300K+ Indian theses.</p>
+            </div>
+            <div class="card">
+                <h3>🧬 DBT / CSIR / ICMR context</h3>
+                <p>Module content references Indian research funding, regulatory frameworks, and journal preferences.</p>
+            </div>
+            <div class="card">
+                <h3>⚖️ UGC AI policy 2024</h3>
+                <p>Aligned with Indian academic integrity rules. DPDP Act 2023 for data privacy.</p>
+            </div>
+            <div class="card">
+                <h3>🧪 Real Indian case studies</h3>
+                <p>Bt brinjal moratorium, ICMR AI ethics draft, SERB grant templates, DST INSPIRE fellowship.</p>
+            </div>
+            <div class="card">
+                <h3>🌐 Hindi/regional (coming)</h3>
+                <p>Subtitles and worksheets in Hindi planned. Massive gap for ₹2-10L MR Indian bio students.</p>
+            </div>
+            <div class="card">
+                <h3>💰 India pricing</h3>
+                <p>₹3,999 self-paced (vs ₹15K+ for international equivalents). Institutional rates for universities.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" style="background: white;">
+    <div class="container">
+        <h2>Choose your tier</h2>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3>Self-Paced</h3>
+                <div class="price"><span class="currency">₹</span>3,999</div>
+                <ul>
+                    <li>All 6 modules + 20 labs</li>
+                    <li>Capstone path</li>
+                    <li>Digital certificate</li>
+                    <li>Lifetime access</li>
+                    <li>GitHub repo access</li>
+                </ul>
+                <a href="#" class="cta-primary" style="background: #3b82f6;">Enroll Now</a>
+            </div>
+
+            <div class="pricing-card featured">
+                <h3>Cohort + Live</h3>
+                <div class="price"><span class="currency">₹</span>7,999</div>
+                <ul>
+                    <li>Everything in Self-Paced</li>
+                    <li>Weekly live Q&A (Sundays)</li>
+                    <li>Peer review of your capstone</li>
+                    <li>Instructor feedback</li>
+                    <li>Discord community access</li>
+                    <li>Certificate with cohort ID</li>
+                </ul>
+                <a href="#" class="cta-primary">Enroll Now</a>
+                <p style="margin-top: 15px; font-size: 0.9rem; color: #666;">Next cohort: July 15, 2026</p>
+            </div>
+
+            <div class="pricing-card">
+                <h3>Institutional</h3>
+                <div class="price">Custom</div>
+                <ul>
+                    <li>License for 50+ students</li>
+                    <li>Custom branding</li>
+                    <li>Admin dashboard</li>
+                    <li>Co-branded certificate</li>
+                    <li>Dedicated support</li>
+                </ul>
+                <a href="mailto:ai-for-biologists@aidadaji.cloud" class="cta-primary" style="background: #1e40af;">Contact Us</a>
+            </div>
+        </div>
+        <p style="text-align: center; margin-top: 30px; color: #666;">
+            🎓 Student discount: 50% off with valid .edu / university email
+        </p>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section>
+    <div class="container">
+        <h2>Frequently asked questions</h2>
+
+        <div class="faq-item">
+            <h4>Do I need coding experience?</h4>
+            <p>No. Most labs use Google Sheets, Notion, or simple AI chat interfaces. Module 3 has optional Python for advanced users, but you can skip it.</p>
+        </div>
+
+        <div class="faq-item">
+            <h4>Is this course in Hindi?</h4>
+            <p>Currently English-only, but Hindi subtitles and Hindi worksheets are coming Q3 2026. Email me if you want to help translate.</p>
+        </div>
+
+        <div class="faq-item">
+            <h4>Is the certificate recognized?</h4>
+            <p>This is a new course (launched Jun 2026), so it's not yet accredited by UGC/AICTE. However, it's MIT-licensed open source — verifiable skills, not just a credential.</p>
+        </div>
+
+        <div class="faq-item">
+            <h4>Can my university adopt this?</h4>
+            <p>Yes! The entire curriculum is open source (MIT license). Email for institutional licensing, custom branding, and bulk enrollment.</p>
+        </div>
+
+        <div class="faq-item">
+            <h4>Will AI replace biologists?</h4>
+            <p>No. But biologists who use AI will replace biologists who don't. This course teaches you to be the former.</p>
+        </div>
+
+        <div class="faq-item">
+            <h4>What if I'm not satisfied?</h4>
+            <p>14-day money-back guarantee, no questions asked. If you complete Module 1 and don't find value, get a full refund.</p>
+        </div>
+
+        <div class="faq-item">
+            <h4>Is the course content really free on GitHub?</h4>
+            <p>Yes! All course materials (READMEs, labs, syllabus) are MIT-licensed on GitHub. You only pay for video lessons, certificate, and live cohort access.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section style="background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); color: white; text-align: center;">
+    <div class="container">
+        <h2 style="color: white;">Ready to use AI without compromising your science?</h2>
+        <p style="font-size: 1.2rem; margin: 20px auto; max-width: 600px;">
+            Join the first cohort of Indian biologists learning to use Claude, ChatGPT, and Perplexity responsibly.
+        </p>
+        <a href="#" class="cta-primary" style="background: #10b981;">Enroll Now — ₹3,999</a>
+        <p style="margin-top: 25px; opacity: 0.9;">
+            ⭐ Star the repo: <a href="https://github.com/Aidadaji/ai-for-biologists" style="color: #fbbf24;">github.com/Aidadaji/ai-for-biologists</a>
+        </p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <p><strong>AI for Biologists</strong> · AIdadaji Labs · 2026</p>
+        <p style="margin-top: 10px;">
+            <a href="https://github.com/Aidadaji/ai-for-biologists">GitHub</a> ·
+            <a href="mailto:ai-for-biologists@aidadaji.cloud">Email</a> ·
+            <a href="#">Twitter</a>
+        </p>
+        <p style="margin-top: 20px; font-size: 0.85rem; opacity: 0.7;">
+            MIT License · Built on <a href="https://github.com/AlterLab-IEU/AlterLab-Academic-Skills">AlterLab Academic Skills</a>
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>
