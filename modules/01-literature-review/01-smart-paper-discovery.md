@@ -173,9 +173,10 @@ Pick the top 10. These are your "must read" papers.
 |----------|-----|---------|
 | **Shodhganga** | https://shodhganga.inflibnet.ac.in/ | 300K+ Indian theses |
 | **Indian Patents Database** | https://ipindiaservices.gov.in/ | Indian patents |
-| **DBT e-Library** | https://www.dbtindia.gov.in/ | DBT-funded research |
+| **DBT (Department of Biotechnology)** | https://dbt.gov.in/ | DBT-funded research + all programs |
 | **CSIR Knowledge Gateway** | https://www.csir.res.in/ | CSIR lab publications |
 | **ICMR Research** | https://www.icmr.gov.in/ | ICMR-funded research |
+| **Indian Biological Data Centre** | https://ibdc.dbtindia.gov.in/ | Indian genomics data |
 
 ### Regional journal tips
 

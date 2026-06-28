@@ -69,11 +69,11 @@ I will verify each item against HGNC (https://www.genenames.org/) and NCBI Gene
 
 **AI will likely return:**
 
-| Gene | AI says | Will verify |
-|------|---------|-------------|
-| TP53 | NM_000546.6 | Check at NCBI |
-| BAX | NM_004324.5 or NM_138761.4 (multiple variants) | Check which is canonical |
-| GAPDH | NM_001289745.3 or NM_002046.7 (multiple) | Check which is standard |
+| Gene | AI says | Will verify | Actual (verified at NCBI Jun 28) |
+|------|---------|-------------|-------------------------------|
+| TP53 | NM_000546.6 | Check at NCBI | ✅ NM_000546.6 (TP53 transcript variant 1, 2519 bp) |
+| BAX | NM_004324.5 or NM_138761.4 (multiple variants) | Check which is canonical | ⚠️ NM_004324.**4** (verified correct version) and NM_138761.4 |
+| GAPDH | NM_001289745.3 or NM_002046.7 (multiple) | Check which is standard | ✅ NM_002046.7 is most-used; NM_001289745.3 also valid |
 
 ### Step 2: Verify accession numbers (15 min)
 

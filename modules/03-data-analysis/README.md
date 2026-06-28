@@ -82,9 +82,9 @@ By end of this module, you'll be able to use AI confidently AND catch its mistak
 - **Indian Mirror:** https://blast.ncbi.nlm.nih.gov/ (works well from India)
 
 ### Indian bioinformatics databases
-- **BTISnet (Biotechnology Information System Network)** — https://btisnet.gov.in/
-- **GIPMER (Genome India Project)** — https://genomeindia.nii.ac.in/
-- **Indian Biological Data Centre** — https://ibdc.dbtindia.gov.in/
+- **DBT (Department of Biotechnology)** — https://dbt.gov.in/ (covers all DBT programs incl. BTISnet, Genome India)
+- **Indian Biological Data Centre** — https://ibdc.dbtindia.gov.in/ (working mirror)
+- **DBT e-Library** — https://dbt.gov.in/scientific-programmes (search publications)
 
 ### Common Indian data analysis pitfalls
 1. **Power cuts during experiments** → missing time points → need robust statistical handling

@@ -130,7 +130,11 @@ By the end of this week, you should have:
 
 1. **Paywalled papers:** Use **INFLIBNET N-LIST** (free for Indian universities) to access journals. Get your university librarian to register you.
 2. **Thesis database:** [Shodhganga](https://shodhganga.inflibnet.ac.in/) has 300K+ Indian theses — goldmine for "what's been done in India"
-3. **DBT e-Library:** [https://www.dbtindia.gov.in/](https://www.dbtindia.gov.in/) for DBT-funded research papers
+**India-specific:**
+- **DBT (Department of Biotechnology)** — https://dbt.gov.in/ (was dbtindia.gov.in)
+- **Genome India Project** — now under DBT; access via https://dbt.gov.in/scientific-programmes
+- **BTISnet** — now under DBT; access via https://dbt.gov.in/scientific-programmes
+- **Indian Biological Data Centre** — https://ibdc.dbtindia.gov.in/ (still working)
 4. **NIPER theses:** Available through Shodhganga
 5. **Regional journals:** Don't ignore Indian journals (Indian Journal of Biochemistry, JBS, etc.) — AI often misses these
 6. **Conference proceedings:** SBC (Society of Biological Chemists), Indian Biophysical Society, etc. — not always indexed

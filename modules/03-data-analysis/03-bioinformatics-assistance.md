@@ -81,9 +81,8 @@ AI can help with bioinformatics, but it's also where AI hallucination is **most 
 **Free:** Yes (KEGG now restricted for some uses; check license)
 
 ### India-specific
-- **GIPMER (Genome India Project):** https://genomeindia.nii.ac.in/
-- **Indian Biological Data Centre:** https://ibdc.dbtindia.gov.in/
-- **BTISnet (Biotechnology Information System Network):** https://btisnet.gov.in/
+- **DBT (Department of Biotechnology)** — https://dbt.gov.in/ (covers BTISnet + Genome India Project)
+- **Indian Biological Data Centre** — https://ibdc.dbtindia.gov.in/ (still active)
 
 ---
 
@@ -300,7 +299,7 @@ Don't give me the actual primer sequences — I'll design those in Primer-BLAST.
 ## 🇮🇳 India-specific bioinformatics
 
 ### GIPMER (Genome India Project)
-- **URL:** https://genomeindia.nii.ac.in/
+- **URL:** https://dbt.gov.in/scientific-programmes (now under DBT)
 - **Use for:** Indian population-specific genetic variants
 - **Why it matters:** Many variants are rare globally but common in Indian populations
 - **Example:** CYP2C19 variants differ in frequency between Indian and European populations, affecting drug metabolism
